@@ -1,10 +1,7 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/auth/Login';
-import Signup from './components/auth/Signup';
-import Table from './components/Table/Table';
-
-
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Table from './pages/Table';
 
 
 function App() {

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useLoginMutation } from '../../services/authQueries';
+import { useLoginMutation } from '../services/authQueries';
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 import toast from 'react-hot-toast';
-import "../../styles/styles.css"
-import TypeWriter from '../../shared/TypeWriter/TypeWriter';
-import { loginSchema } from '../../schema/authSchema';
+import "../styles/styles.css"
+import TypeWriter from '../shared/TypeWriter/TypeWriter';
+import { loginSchema } from '../schema/authSchema';
 
 
 const Login = () => {
@@ -126,7 +126,7 @@ const Login = () => {
                                                 </div>
                                             </button>
 
-                                            <div class="flex items-center justify-between mt-4"><span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span> <Link to="/signup" class="text-xs  text-gray-500 uppercase dark:text-gray-400 hover:underline">Create an account</Link> <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span></div>
+                                            <div className="flex items-center justify-between mt-4"><span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span> <Link to="/signup" className="text-xs  text-gray-500 uppercase dark:text-gray-400 hover:underline">Create an account</Link> <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span></div>
                                         </form>
                                     </div>
                                 </div>

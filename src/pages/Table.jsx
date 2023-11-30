@@ -3,9 +3,9 @@ import { Tabs, TabList, TabPanels, TabPanel, useTab, useMultiStyleConfig, Box, B
 import { FcDownLeft, FcDownRight } from 'react-icons/fc';
 import { useNavigate } from 'react-router-dom'; // Step 1
 
-import '../../styles/styles.css';
-import UserList from '../user/UserList';
-import ItemList from '../items/ItemList';
+import '../styles/styles.css';
+import UserList from '../components/user/UserList';
+import ItemList from '../components/items/ItemList';
 
 const Table = () => {
   const navigate = useNavigate(); // Step 2
@@ -33,9 +33,9 @@ const Table = () => {
     <div className='table-bg py-14'>
       <div className='flex items-center justify-center my-6'>
         <button onClick={handleLogout} style={{ content: 'Hover me!' }}>
-          <div class='left'></div>
+          <div className='left'></div>
           <h1 className='font-bold text-white px-5 py-3'>Logout</h1>
-          <div class='right'></div>
+          <div className='right'></div>
         </button>
       </div>
       <Tabs>

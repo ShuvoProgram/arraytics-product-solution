@@ -1,11 +1,10 @@
-import React from 'react';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 import { Link, useNavigate } from 'react-router-dom';
-import { useSignupMutation } from '../../services/authQueries';
-import "../../styles/styles.css"
-import { signupSchema } from '../../schema/authSchema';
+import { useSignupMutation } from '../services/authQueries';
+import "../styles/styles.css"
+import { signupSchema } from '../schema/authSchema';
 
 
 const Signup = () => {
@@ -146,7 +145,7 @@ const Signup = () => {
                                                         </div>
                                                     </div>
                                                 </button>
-                                                <div class="flex items-center justify-between mt-4"><span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span> <Link to="/" class="text-xs  text-gray-500 uppercase dark:text-gray-400 hover:underline">DO YOU HAVE AN ACCOUNT?</Link> <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span></div>
+                                                <div className="flex items-center justify-between mt-4"><span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span> <Link to="/" className="text-xs  text-gray-500 uppercase dark:text-gray-400 hover:underline">DO YOU HAVE AN ACCOUNT?</Link> <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span></div>
                                             </form>
                                         </div>
                                     </div>
